@@ -49,3 +49,18 @@ def rd1_question_13(df):
     st.plotly_chart(fig, user_container_width=True)
     
     return None
+
+
+def rd1_question_14(df):
+    st.text("As we can see, bike with high kilometer have chapier prices")
+
+    fig = px scatter(
+        df, 
+        x="Km driven",
+        y="selling_price"
+        labels={"Km_driven": "Kilometers", "selling_price": "Selling_price"}, 
+    )
+
+    st.plotly_chart(fig, use_container_width=True)
+
+    return none 
